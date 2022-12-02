@@ -28,7 +28,7 @@ jobs:
           nuget-version: '5.x'
 
       - name: Restore Packages
-        run: nuget restore FemDesign.Core/FemDesign.Core.csproj
+        run: nuget restore FemDesign.Core/FemDesign.Core.csproj -SolutionDirectory ./
 
       - name: Build Solution
         run: |
